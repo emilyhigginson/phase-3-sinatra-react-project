@@ -4,7 +4,7 @@ class SongController < ApplicationController
     #get all songs 
     get '/songs' do 
         songs = Song.all 
-        # songs = Song.where(created_at: Date.now) 
+        # songs = Song.where(day_id: 1) 
         songs.to_json
     end
 
