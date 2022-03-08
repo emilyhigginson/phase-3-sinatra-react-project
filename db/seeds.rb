@@ -1,4 +1,9 @@
 puts "🌱 Seeding spices..."
+Song.destroy_all
+Like.destroy_all
+User.destroy_all
+Day.destroy_all
+
 
 puts "Creating users..."
 gil = User.create(name: "Gil")
@@ -14,5 +19,10 @@ redlight= Song.create(title: "Red Light", artist: "The Strokes", lyric: "Oh, the
 puts "Creating days... "
 march_7 = Day.create(date: "2022-03-07")
 march_8 = Day.create(date: "2022-03-08")
+
+
+50.times do 
+    Like.create(user_id: User.all.sample.id, song_id: Song.all.sample.id)
+end
 
 puts "✅ Done seeding!"

@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_07_221102) do
+ActiveRecord::Schema.define(version: 2022_03_08_155519) do
 
   create_table "days", force: :cascade do |t|
     t.date "date"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "song_id"
+    t.boolean "liked"
   end
 
   create_table "songs", force: :cascade do |t|

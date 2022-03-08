@@ -4,8 +4,10 @@ class SongController < ApplicationController
     #get all songs 
     get '/songs' do 
         songs = Song.all 
+        # songs = Song.where(created_at: Date.now) 
         songs.to_json
     end
+
     #add a new song 
     post '/songs' do 
         song = Song.create(

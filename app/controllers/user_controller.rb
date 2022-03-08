@@ -19,5 +19,10 @@ class UserController < ApplicationController
     get '/users/:id' do 
         user = User.find(params[:id])
         user.to_json(include: :songs)
-    end  
+    end 
+
+    # get '/user/profile' do 
+    #     user = User.first
+    #     user.to_json(include: [:songs, :my_songs])
+    # end 
 end
