@@ -12,4 +12,7 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+use DayController
+use SongController
+use UserController
 run ApplicationController
