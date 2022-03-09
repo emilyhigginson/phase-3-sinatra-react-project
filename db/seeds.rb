@@ -14,7 +14,7 @@ disco = Song.create(title: "Love Will Work it Out", artist: "Durand Jones and th
 pepsi = Song.create(title: "Pepsi on the House", artist: "Peach Pit", lyric: "Live a little won't ya just to seem like your own age", link: "https://www.youtube.com/embed/NhGbfx6j4Zs", user_id: emily.id, day_id: 1)
 gravity = Song.create(title: "Gravity", artist: "John Mayer", lyric: "Keep me where the light is", link: "https://www.youtube.com/embed/7VBex8zbDRs", user_id: emily.id, day_id: 2)
 redlight= Song.create(title: "Red Light", artist: "The Strokes", lyric: "Oh, the sky's not the limit and you're never gonna guess what is", link: "https://www.youtube.com/embed/AqJO7JMkTVk", user_id: gil.id, day_id: 2)
-Song.create(title: "Mt. Joy", artist: "Mt. Joy", lyric: "All we really need's the love in this room", link: "https://www.youtube.com/embed/jVloAnne6-w")
+Song.create(title: "Mt. Joy", artist: "Mt. Joy", lyric: "All we really need's the love in this room", link: "https://www.youtube.com/embed/jVloAnne6-w", user_id: emily.id, day_id: 3)
 
 puts "Creating days... "
 march_7 = Day.create(date: "2022-03-07")
