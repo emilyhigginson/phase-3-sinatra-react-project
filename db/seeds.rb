@@ -15,6 +15,7 @@ pepsi = Song.create(title: "Pepsi on the House", artist: "Peach Pit", lyric: "Li
 gravity = Song.create(title: "Gravity", artist: "John Mayer", lyric: "Keep me where the light is", link: "https://www.youtube.com/embed/7VBex8zbDRs", user_id: emily.id, day_id: 2)
 redlight= Song.create(title: "Red Light", artist: "The Strokes", lyric: "Oh, the sky's not the limit and you're never gonna guess what is", link: "https://www.youtube.com/embed/AqJO7JMkTVk", user_id: gil.id, day_id: 2)
 Song.create(title: "Mt. Joy", artist: "Mt. Joy", lyric: "All we really need's the love in this room", link: "https://www.youtube.com/embed/jVloAnne6-w", user_id: emily.id, day_id: 3)
+Song.create(title: "Yes Im Changing", artist: "Tame Impala", lyric: "Yes, I'm changing, can't stop it now, even if I wanted I wouldn't know how", link: "https://www.youtube.com/embed/qQtwR-IBbKM", user_id: gil.id, day_id: 3)
 
 puts "Creating days... "
 march_7 = Day.create(date: "2022-03-07")
