@@ -18,7 +18,12 @@ class UserController < ApplicationController
     #returns all of a user's songs 
     get '/users/:id' do 
         user = User.find(params[:id])
-        user.to_json(include: :songs)
+        user.to_json(
+            # only: :my_songs, 
+            include: {
+                my_songs: { only: [:title, :artist, :lyric, :link, :id] }
+            }
+    )
     end 
 
     # get '/user/profile' do 
